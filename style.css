@@ -1,0 +1,80 @@
+body {
+    background-image: url("Pics/forest.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position:relative;
+}
+
+.gif-girl{
+    position: relative;
+    height:200px;
+    top:1100px;
+    left: 850px;
+}
+
+.main{
+    margin: auto;
+    margin-top:-300px;
+    width: 1200px;
+    height: 1825px;
+    position: center center;          
+    background-color: rgb(0, 0, 255);
+}
+.motherboard {
+    position: relative;
+    margin: auto;
+    inset: 0;
+    width: 90%;
+    height: 90%;
+    object-fit:cover;
+}
+
+.homepg-button {
+    position:relative;
+    color: rgb(255, 0, 0);
+    font-family: "Ubuntu Mono", monospace;
+    font-size:large;
+    font-weight: bold;
+    background-color:rgb(108, 108, 108);
+    border-radius: 0;
+    height:35px;
+    animation: blinker 3s linear infinite;
+} 
+@keyframes blinker {
+  50% {
+    color: transparent;
+  }
+}
+
+.button-one{
+    width: -165px;
+    left: -371px;
+    top: -157px;
+}
+
+.button-two{
+    width: 175px;
+    left: 416px;
+    top: 157px;
+}
+
+.button-three{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: -4px;
+    height:126px;
+    width: 41px;
+    left: 664px;
+    top: 790px;
+}
+
+.button-four{
+   writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: -4px;
+    height:118px;
+    width: 43px;
+    left: 622px;
+    top: 1021px;
+}
