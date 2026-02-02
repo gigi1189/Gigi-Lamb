@@ -7,30 +7,36 @@ body {
 }
 
 .gif-girl {
-    position: relative;
+    position: absolute;
     height: 220px;
-    top: 1550px;
-    left: 750px;
+    transform: translate(760px, 1330px);
 }
 
 .recoride {
-    position: relative;
+    position: absolute;
     height: 110px;
-    top: 910px;
-    left: -250px;
+    transform: translate(40px, 790px);
+}
+
+.wires {
+    position: absolute;
+}
+
+.orchid {
+    height: 450px;
+    position: absolute;
+    transform: translate(-50px, -400px);
 }
 
 .main {
     margin: auto;
-    margin-top: -300px;
     width: 1100px;
     height: 1825px;
-    position: center center;
-    background-color: rgb(0, 0, 255);
+    position: relative;
 }
 
 .motherboard {
-    position: relative;
+    position: absolute;
     margin: auto;
     inset: 0;
     width: 100%;
@@ -38,31 +44,96 @@ body {
     object-fit: cover;
 }
 
-.main-box{
-    position: relative;
-    left: 224px;
-    bottom: 1410px;
-    height: 490px;
+.main-box {
+    position: absolute;
     width: 670px;
+    transform: translate(223px, 420px);
     border-radius: 5px;
     border-style: groove;
     border-width: 3px;
-    border-color:rgb(80, 80, 80);
+    border-color: rgb(80, 80, 80);
     background-color: rgb(92, 92, 92);
+    display: flex;
 }
 
-p {
-    color:white;
+.abt-me-box {
+    overflow-y: scroll;
+    scrollbar-color: rgb(112, 112, 112) rgb(83, 83, 83);
+    scrollbar-width: thin;
+    border: 3px groove rgb(88, 88, 88);
+    height: 465px;
+    width: 480px;
+    padding: 10px;
+    color: white;
     font-family: "Ubuntu Mono", monospace;
 }
-.homepg-button {
-    position: relative;
-    color: rgb(255, 0, 0);
+
+.right-box {
+    color: white;
+    text-align: center;
     font-family: "Ubuntu Mono", monospace;
-    font-size: 23px;
+    font-size: small;
+    border: 3px groove rgb(92, 92, 92);
+    height: 159px;
+    width: 200px;
+}
+
+.status-box {
+    text-align: left;
+    background-color: rgb(129, 129, 129);
+    border-radius: 5px;
+    border: 2px groove rgb(102, 102, 102);
+    margin: 5px;
+    padding: 10px;
+}
+
+.music-box {
+    position: relative;
     background-color: rgb(92, 92, 92);
-    border-radius: 0;
+    border-radius: 5px;
+    color: white;
+    font-family: "Ubuntu Mono", monospace;
+    height: 203px;
+    width: 276px;
+    left: 222px;
+    bottom: 1323px;
+}
+
+.homepg-button {
+    position: absolute;
+    background-color: grey;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: red;
+    cursor: pointer;
+    border: 2px solid 636363;
+    padding: 0.25em 0.5em;
+    text-shadow: 1px 1px 2px rgb(194, 20, 49);
+    box-shadow: 
+        1px 1px 0px 0px #4b4b4b,
+        2px 2px 0px 0px #4b4b4b,
+        3px 3px 0px 0px #4b4b4b,
+        4px 4px 0px 0px #4b4b4b,
+        5px 5px 0px 0px #4b4b4b;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
     animation: blinker 3s linear infinite;
+}
+
+.homepg-button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+@media (min-width: 768px) {
+    .button-54 {
+        padding: 0.25em 0.75em;
+    }
 }
 
 @keyframes blinker {
@@ -75,16 +146,14 @@ p {
     letter-spacing: 4px;
     width: 159px;
     height: 34px;
-    left: 329px;
-    bottom: 2139px;
+    transform: translate(324px, -27px);
 }
 
 .button-two {
     letter-spacing: 4px;
     width: 168px;
     height: 33px;
-    left: 373px;
-    bottom: 2139px;
+    transform: translate(368px, -26px);
 }
 
 .button-three {
@@ -92,10 +161,9 @@ p {
     writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: -4px;
-    height: 122px;
+    height: 125px;
     width: 39px;
-    left: 612px;
-    bottom: 1529px;
+    transform: translate(607px, 590px);
 }
 
 .button-four {
@@ -104,7 +172,6 @@ p {
     text-orientation: upright;
     letter-spacing: -4px;
     height: 117px;
-    width: 42px;
-    left: 571px;
-    bottom: 1309px;
+    width: 43px;
+    transform: translate(565px, 805px);
 }
