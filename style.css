@@ -6,12 +6,84 @@ body {
     position: relative;
 }
 
+/*
+Source - https://stackoverflow.com/a/70499691
+Posted by S Gautam, modified by community. See post 'Timeline' for change history
+Retrieved 2026-02-08, License - CC BY-SA 4.0
+
+
+.overlay-black{
+    position: absolute;
+    top: 0; left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index:1;
+    background-color:black;
+    animation-name:fadeIn;
+    animation-duration: 2s;
+    animation-timing-function:ease-in;
+    animation-fill-mode:forwards;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+*/
+
+.music-player {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    width: 275px;
+    height: 100px;
+    background: rgba(31, 31, 31);
+    backdrop-filter: blur(3px);
+    border-radius: 12px;
+    cursor: move;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.slim-music-player {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 275px;
+    height: 20px;
+    background: rgba(31, 31, 31);
+    backdrop-filter: blur(3px);
+    border-top-left-radius: 12px;
+    cursor: move;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.player-text {
+    color: white;
+    font: normal x-small Ubuntu Mono, monospace;    
+}
+
+.player-button {
+    color: white;
+    font-weight: bold;
+    background: rgb(49, 49, 49);
+    border-top-left-radius: 5px;
+}
+
 .gif-girl {
     position: absolute;
     height: 220px;
     transform: translate(760px, 1330px);
 }
 
+.diamond{
+    position:absolute;
+    height: 70px;
+    transform: translate(1020px, -660px);
+}
 .recoride {
     position: absolute;
     height: 110px;
@@ -31,17 +103,22 @@ body {
 .main {
     margin: auto;
     width: 1100px;
+    width: 1100px;
     height: 1825px;
+    position: relative;
     position: relative;
 }
 
+
 .motherboard {
+    position: absolute;
     position: absolute;
     margin: auto;
     inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: drop-shadow(8px 8px 30px rgba(58, 86, 27, 0.5));
 }
 
 .main-box {
@@ -52,7 +129,7 @@ body {
     border-style: groove;
     border-width: 3px;
     border-color: rgb(80, 80, 80);
-    background-color: rgb(92, 92, 92);
+    background-image: url("PIcs/StaticBG.jpg");
     display: flex;
 }
 
@@ -60,8 +137,8 @@ body {
     overflow-y: scroll;
     scrollbar-color: rgb(112, 112, 112) rgb(83, 83, 83);
     scrollbar-width: thin;
-    border: 3px groove rgb(88, 88, 88);
-    height: 465px;
+    border: 5px groove rgb(54, 54, 54);
+    height: 469px;
     width: 480px;
     padding: 10px;
     color: white;
@@ -87,31 +164,59 @@ body {
     padding: 10px;
 }
 
-.music-box {
-    position: relative;
-    background-color: rgb(92, 92, 92);
+.other-box-1 {
+    background-image: url("Pics/StaticBG.jpg");
     border-radius: 5px;
+    border-style: groove;
+    border-width: 5px;
+    border-color: rgb(80, 80, 80);
     color: white;
     font-family: "Ubuntu Mono", monospace;
-    height: 203px;
-    width: 276px;
-    left: 222px;
-    bottom: 1323px;
+    height: 206px;
+    width: 270px;
+    transform: translate(222px, 1000px);
 }
 
+.other-box-2 {
+    background-image: url("Pics/StaticBG.jpg");
+    border-radius: 5px;
+    border-style: groove;
+    border-width: 3px;
+    border-color: rgb(80, 80, 80);
+    color: white;
+    font-family: "Ubuntu Mono", monospace;
+    height: 204px;
+    width: 267px;
+    transform: translate(629px, 787px);
+}
+
+.other-box-3 {
+    background-image: url("Pics/StaticBG.jpg");
+    border-radius: 5px;
+    border-style: groove;
+    border-width: 3px;
+    border-color: rgb(80, 80, 80);
+    color: white;
+    font-family: "Ubuntu Mono", monospace;
+    height: 200px;
+    width: 270px;
+    transform: translate(391px, 869px);
+}
 .homepg-button {
+    position: absolute;
+    background-color: grey;
     position: absolute;
     background-color: grey;
     font-family: "Ubuntu Mono", monospace;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
-    color: red;
+    color: rgb(198, 49, 49);
     cursor: pointer;
     border: 2px solid 636363;
     padding: 0.25em 0.5em;
-    text-shadow: 1px 1px 2px rgb(194, 20, 49);
-    box-shadow: 
+    text-shadow: 1px 1px 1px rgb(138, 33, 33);
+    box-shadow:
         1px 1px 0px 0px #4b4b4b,
         2px 2px 0px 0px #4b4b4b,
         3px 3px 0px 0px #4b4b4b,
@@ -136,9 +241,24 @@ body {
     }
 }
 
+}
+
+.homepg-button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+@media (min-width: 768px) {
+    .button-54 {
+        padding: 0.25em 0.75em;
+    }
+}
+
 @keyframes blinker {
     50% {
         color: transparent;
+        text-shadow: none;
     }
 }
 
@@ -146,16 +266,18 @@ body {
     letter-spacing: 4px;
     width: 159px;
     height: 34px;
-    transform: translate(324px, -27px);
+    transform: translate(325px, -456px);
 }
 
 .button-two {
     letter-spacing: 4px;
     width: 168px;
     height: 33px;
-    transform: translate(368px, -26px);
+    transform: translate(368px, -455px);
 }
 
+.button-three {
+    font-size: large;
 .button-three {
     font-size: large;
     writing-mode: vertical-rl;
@@ -163,15 +285,19 @@ body {
     letter-spacing: -4px;
     height: 125px;
     width: 39px;
-    transform: translate(607px, 590px);
+    transform: translate(607px, 160px);
 }
 
+.button-four {
+    font-size: large;
+    writing-mode: vertical-rl;
 .button-four {
     font-size: large;
     writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: -4px;
     height: 117px;
+    height: 117px;
     width: 43px;
-    transform: translate(565px, 805px);
+    transform: translate(565px, 380px);
 }
