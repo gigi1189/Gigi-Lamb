@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="script.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>About - Gigi Lamb</title>
+    <link rel="icon" type="image/x-icon" href="Pics/Favi2.png">
+</head>
+
+<body class="about-body">
+<div class="music-player">
+    <button onclick="minimizePlayer()" class="player-button">-</button> <span class="player-text">Now Playing:</span>
+    <br>
+    <iframe id="Spotify-frame" data-testid="embed-iframe"
+      src="https://open.spotify.com/embed/track/4IoKhypOMtLZd0qsejlB1C?utm_source=generator&theme=0" width="100%" 
+      frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media;  fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+  <div class="slim-music-player" style="display: none;">
+    <button onclick="maximizePlayer()" class="player-button">▢</button> <marquee class="player-text" style="padding-top: 3px;"> You are listening to: )✧⃛* by ⣎⡇ꉺლ༽இ•̛)ྀ◞ ༎ຶ ༽ৣৢ؞ৢ؞ؖ ꉺლ</marquee>
+  </div>
+</body>
+
+</html>

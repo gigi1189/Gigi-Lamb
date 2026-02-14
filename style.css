@@ -7,6 +7,8 @@ body {
 }
 
 /*
+
+FADE IN FROM BLACK - COMING SOON ????
 Source - https://stackoverflow.com/a/70499691
 Posted by S Gautam, modified by community. See post 'Timeline' for change history
 Retrieved 2026-02-08, License - CC BY-SA 4.0
@@ -80,10 +82,20 @@ Retrieved 2026-02-08, License - CC BY-SA 4.0
 }
 
 .diamond{
-    position:absolute;
-    height: 70px;
-    transform: translate(1020px, -660px);
+    position:absolute; 
+    height: 70px; 
+    -webkit-animation: breathing 4s ease-out infinite normal;
+    animation: breathing 4s ease-out infinite normal;
+    -webkit-font-smoothing: antialiased;
 }
+
+@-webkit-keyframes breathing {
+  0%   { transform: translate(834px, 525px) scale(0.9); }
+  25%  { transform: translate(834px, 525px) scale(1); }
+  60%  { transform: translate(834px, 525px) scale(0.9); }
+  100% { transform: translate(834px, 525px) scale(0.9); }
+}
+
 .recoride {
     position: absolute;
     height: 110px;
@@ -103,15 +115,11 @@ Retrieved 2026-02-08, License - CC BY-SA 4.0
 .main {
     margin: auto;
     width: 1100px;
-    width: 1100px;
     height: 1825px;
-    position: relative;
     position: relative;
 }
 
-
 .motherboard {
-    position: absolute;
     position: absolute;
     margin: auto;
     inset: 0;
@@ -129,11 +137,19 @@ Retrieved 2026-02-08, License - CC BY-SA 4.0
     border-style: groove;
     border-width: 3px;
     border-color: rgb(80, 80, 80);
-    background-image: url("PIcs/StaticBG.jpg");
+    background-image: url("Pics/StaticBG.jpg");
     display: flex;
 }
 
+@font-face {
+  font-family: 'Pixel Space';
+  src: url('https://gigilamb.neocities.org/PixelSpaceFreePersonalUseR-zrppw.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .abt-me-box {
+  font-family: 'Pixel Space', monospace;
     overflow-y: scroll;
     scrollbar-color: rgb(112, 112, 112) rgb(83, 83, 83);
     scrollbar-width: thin;
@@ -142,7 +158,6 @@ Retrieved 2026-02-08, License - CC BY-SA 4.0
     width: 480px;
     padding: 10px;
     color: white;
-    font-family: "Ubuntu Mono", monospace;
 }
 
 .right-box {
@@ -205,8 +220,6 @@ Retrieved 2026-02-08, License - CC BY-SA 4.0
 .homepg-button {
     position: absolute;
     background-color: grey;
-    position: absolute;
-    background-color: grey;
     font-family: "Ubuntu Mono", monospace;
     font-size: 16px;
     text-decoration: none;
@@ -227,20 +240,6 @@ Retrieved 2026-02-08, License - CC BY-SA 4.0
     -webkit-user-select: none;
     touch-action: manipulation;
     animation: blinker 3s linear infinite;
-}
-
-.homepg-button:active {
-    box-shadow: 0px 0px 0px 0px;
-    top: 5px;
-    left: 5px;
-}
-
-@media (min-width: 768px) {
-    .button-54 {
-        padding: 0.25em 0.75em;
-    }
-}
-
 }
 
 .homepg-button:active {
@@ -278,8 +277,6 @@ Retrieved 2026-02-08, License - CC BY-SA 4.0
 
 .button-three {
     font-size: large;
-.button-three {
-    font-size: large;
     writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: -4px;
@@ -291,13 +288,16 @@ Retrieved 2026-02-08, License - CC BY-SA 4.0
 .button-four {
     font-size: large;
     writing-mode: vertical-rl;
-.button-four {
-    font-size: large;
-    writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: -4px;
     height: 117px;
-    height: 117px;
     width: 43px;
     transform: translate(565px, 380px);
+}
+
+/* ABOUT ME PAGE CSS BELOW*/
+
+.about-body{
+    background-image:none;
+    background-color:rgba(96, 106, 174) !important;
 }
