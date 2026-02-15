@@ -298,6 +298,38 @@ Retrieved 2026-02-08, License - CC BY-SA 4.0
 /* ABOUT ME PAGE CSS BELOW*/
 
 .about-body{
+    font-size:small;
+    font-family: "Kode Mono", monospace;
     background-image:none;
-    background-color:rgba(96, 106, 174) !important;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background-color:rgba(96, 106, 174);
+}
+
+.about-box{
+    overflow-y: scroll;
+    margin: 200px 270px;
+    padding: 15px 30px;
+    border: 1px groove black;
+    border-radius: 3px;
+    background: radial-gradient(#fefff0de, #ffe6fee4);
+    position:fixed;
+    height: 360px;
+    width: 690px ;
+}
+.about-nav{
+    overflow-y: none;
+    margin: 200px 1050px;
+    padding: 15px;
+    border: 1px groove black;
+    border-radius: 3px;
+    background: radial-gradient(#fefff0de, #ffe6fee4);
+    position:fixed;
+    height: 360px;
+    width: 130px ;
+}
+
+.abt-gif{
+    height: 45px;
+    padding:0px 20px;
 }
