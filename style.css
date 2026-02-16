@@ -46,7 +46,6 @@ Retrieved 2026-02-08, License - CC BY-SA 4.0
     background: rgba(31, 31, 31);
     backdrop-filter: blur(3px);
     border-radius: 12px;
-    cursor: move;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
