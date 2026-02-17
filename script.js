@@ -13,6 +13,18 @@ function maximizePlayer(){
     document.querySelector(".slim-music-player").style.display="none";
 }
 
+function toggleMusic(){
+    const audio = window.frames["musicFrame"].document.querySelector("audio");
+
+    if (audio.paused){
+    audio.play();
+    document.querySelector(".player-btn").innerHTML = "II";
+    }else{
+    audio.pause();
+    document.querySelector(".player-btn").innerHTML = "▶";
+    };
+}
+
 tsParticles.load("tsparticles", {
     interactivity: {
         events: {
@@ -49,6 +61,3 @@ tsParticles.load("tsparticles", {
         }
     }
 });
-
-
-
