@@ -61,3 +61,28 @@ tsParticles.load("tsparticles", {
         }
     }
 });
+
+function showPjct(num) {
+
+  document.querySelectorAll(".pjct").forEach(el => {
+    el.style.display = "none";
+  });
+
+  document.querySelectorAll(".red-light").forEach(el => {
+    el.style.display = "none";
+  });
+
+  document.querySelector(`.pjct-${num === 1 ? "one" :
+                                num === 2 ? "two" :
+                                num === 3 ? "three" :
+                                num === 4 ? "four" :
+                                num === 5 ? "five" :
+                                num === 6 ? "six" : "seven"}`).style.display = "block";
+
+  document.querySelector(`.light-${num === 1 ? "one" :
+                                num === 2 ? "two" :
+                                num === 3 ? "three" :
+                                num === 4 ? "four" :
+                                num === 5 ? "five" :
+                                num === 6 ? "six" : "seven"}`).style.display = "block";
+}

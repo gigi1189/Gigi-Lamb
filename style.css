@@ -368,6 +368,7 @@ button.second {
 
 .about-box {
     overflow-y: scroll;
+    overflow-x: hidden;
     margin: 200px 270px;
     padding: 15px 30px;
     border: 1px groove black;
@@ -398,35 +399,38 @@ button.second {
 /* PROJECTS PAGE CSS BELOW*/
 
 .pjct-body {
-    background-image: none;
-    background-color: rgb(60, 57, 71);
+    background-image: url("Pics/beach.jpg");
+    background-color: rgb(255, 254, 233);
 }
 
 .motherboard-two {
     position: absolute;
-    height: 700px;
-    margin: 35px 70px;
+    height: 750px;
+    margin: 30px 100px;
 }
 
 .pjct-box {
-    color: white;
-    width: 715px;
-    height: 675px;
-    transform: translate(630px, 45px);
-    background-color: rgb(59, 59, 59);
+    padding: 10px;
+    color: black;
+    width: 555px;
+    height: 520px;
+    transform: translate(615px, 145px);
+    background-color: #dbc5d1;
     position:position;
-    border-radius: 10px;
-    border: 4px groove black;
+    border: 1px solid #b1838c;
+}
+.pjct{
+    display:none;
 }
 
 .pjct-btn {
     position: absolute;
-    background-color: rgb(50, 50, 50);
-    height: 26px;
-    width: 26px;
+    background-color: rgb(35, 35, 35);
+    height: 40px;
+    width: 40px;
     border-radius: 40px;
     box-shadow:
-    inset 0 -0.0625em 0.0625em 0.125em rgb(0 0 0 / 0.1),
+    inset 0 -0.0625em 0.0625em 0.125em rgba(0, 0, 0, 0.596),
     inset 0 -0.125em 0.0625em rgb(0 0 0 / 0.2),
     inset 0 0.1875em 0.0625em rgb(255 255 255 / 0.3),
     0 0.125em 0.125em rgb(41, 41, 41);
@@ -460,20 +464,21 @@ button.second {
 }
 
 .red-light{
+    display:none;
     position: absolute;
-    border-radius: 40px;
-    height:20px;
-    width:20px;
-    animation: glowPulse 1.5s infinite alternate;
+    height: 33px;
+    animation: glowPulse 2s infinite alternate;
 }
 
 @keyframes glowPulse {
   from {
-    filter: drop-shadow(0 0 6px red)
-            drop-shadow(0 0 12px red);
+    filter: drop-shadow(0 0 0px red)
+            drop-shadow(0 0 0px red);
+    opacity: 0;
   }
   to {
     filter: drop-shadow(0 0 18px red)
             drop-shadow(0 0 35px red);
+    opacity: 1;
   }
 }
