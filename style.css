@@ -405,22 +405,61 @@ button.second {
 
 .motherboard-two {
     position: absolute;
-    height: 750px;
-    margin: 30px 100px;
+    height: 800px;
+    margin: 20px 100px;
 }
 
 .pjct-box {
     padding: 10px;
     color: black;
-    width: 555px;
-    height: 520px;
-    transform: translate(615px, 145px);
+    width: 590px;
+    height: 560px;
+    transform: translate(650px, 142px);
     background-color: #dbc5d1;
     position:position;
     border: 1px solid #b1838c;
 }
 .pjct{
     display:none;
+    font-family: 'Lexend Deca', monospace;
+    color:white;
+}
+
+.pjct-two{
+    background-image:url('Pics/FlowPow_Mac.png'); 
+    background-attachment:fixed;
+    background-size:100%;
+    overflow-y: scroll; 
+    height:540px; 
+    width:555; 
+    transform: scale(1.04);
+    padding:10px;
+}
+
+.pjct-one{
+        background-image:url("Pics/dot-background.gif");
+
+    height:540px; 
+    width:555; 
+    transform: scale(1.04);
+    padding:10px;
+}
+
+.pjct-gal{
+    display: flex; 
+    border: 1px solid rgba(159, 114, 130, 0.602);
+    height: 430px;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    overflow-y:scroll; 
+    scrollbar-color: rgba(191, 146, 146, 0.52) rgba(74, 50, 50, 0.626);
+    scrollbar-width: thin;
+    font-size: small;
+    background-color: rgba(240, 210, 210, 0.555);
+    padding:10px; 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
 }
 
 .pjct-btn {
@@ -435,7 +474,6 @@ button.second {
     inset 0 0.1875em 0.0625em rgb(255 255 255 / 0.3),
     0 0.125em 0.125em rgb(41, 41, 41);
 }
-
 .pjct-title {
     transform:translate(75px, 60px);
     position:absolute;
@@ -443,13 +481,29 @@ button.second {
     width:  70px;
     background-color: rgb(115, 115, 115);
     padding: 20px;
-     box-shadow:
+    box-shadow:
     inset 0 -0.0625em 0.0625em 0.125em rgb(0 0 0 / 0.1),
     inset 0 -0.125em 0.0625em rgba(0, 0, 0, 0.332),
     inset 0 0.1875em 0.0625em rgba(255, 255, 255, 0.781),
     0 0.125em 0.125em rgb(41, 41, 41);
 }
 
+.pjct-item{
+    border-radius: 8px;
+    padding: 10px;
+    margin:5px 20px 5px 0px;
+    background-color: #e6bcb9;
+    box-shadow:
+    inset 0 -0.0625em 0.0625em 0.125em rgba(149, 108, 108, 0.1),
+    inset 0 -0.125em 0.0625em rgba(114, 67, 67, 0.332),
+    inset 0 0.1875em 0.0625em rgba(255, 255, 255, 0.781),
+    0 0.125em 0.125em rgb(104, 65, 65);
+}
+
+.pjct-item:hover{
+    background-color: #f7c9c5;
+    transform: scale(1.1);
+}
 .pjct-btn:hover {
     cursor: pointer;
     background-color: rgba(77, 77, 77, 0.822);
@@ -482,3 +536,52 @@ button.second {
     opacity: 1;
   }
 }
+
+    #container {
+      width: 100%;
+      height: 400px;
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 7px;
+      touch-action: none;
+    }
+    #item {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(245, 230, 99);
+      border: 10px solid rgba(136, 136, 136, .5);
+      border-radius: 50%;
+      touch-action: none;
+      user-select: none;
+    }
+    #item:active {
+      background-color: rgba(168, 218, 220, 1.00);
+    }
+    #item:hover {
+      cursor: pointer;
+      border-width: 20px;
+    }
+.not-found-body {
+  background: linear-gradient(-45deg, #9b6e75, #935b53, #9c4964, #b8574b);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+

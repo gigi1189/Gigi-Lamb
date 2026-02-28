@@ -1,4 +1,6 @@
 const clickSound = new Audio('Sounds/Submarine.mp3');
+const hoverSound = new Audio('Sounds/Hover.mp3');
+
 function playClick() {
     clickSound.currentTime = 0; 
     clickSound.play();
@@ -61,6 +63,12 @@ tsParticles.load("tsparticles", {
         }
     }
 });
+
+
+function playHoverSound() {
+    hoverSound.currentTime = 0; 
+    hoverSound.play();
+}
 
 function showPjct(num) {
 
