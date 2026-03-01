@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <script src="script.js" defer></script>
+  <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0, 
+        user-scalable=no" />
+  <script src="gallery.js" defer></script>
   <link rel="stylesheet" href="style.css">
-  <title>Gigi Lamb - gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Pixelify+Sans:wght@400..700&display=swap"
+    rel="stylesheet">
+  <title>Gigi Lamb - Gallery</title>
   <link rel="icon" type="image/x-icon" href="Pics/Favi2.png">
 </head>
 
-<body class="gallery-body">
-    <div id="outerContainer">
+<body id="gallery-body" >
+<div id="gallery-nav"> 
+<a href="home.html" ><button class="gal-nav-btn">home</button></a> 
+<button class="gal-nav-btn" onclick="toggleInfo()">info</button> 
+<button class="gal-nav-btn" onclick="toggleTheme()">theme</button>
+<div id="info-box">
+  This a collection of some cool images/graphics. See what cool things you can make by moving stuff around :) <br> <br>
+  Double click on the images to learn more about them. If an image doesn't show any info it means credit is coming soon! <br> <br>
+  Elements are still pretty buggy! I'll fix when I feel like it <br><br>
+</div>
+<div id="theme-box">
+  <button class="theme-btn" onclick="changeTheme('dark')">dark</button> <br>
+  <button class="theme-btn" onclick="changeTheme('kawaii')">kawaii</button> <br>
+  <button class="theme-btn" onclick="changeTheme('windows')">windows</button> <br>
+  <button class="theme-btn" onclick="changeTheme('scary')">scary</button> <br>
+  <button class="theme-btn" onclick="changeTheme('gigi')">gigi</button> <br>
+  <button class="theme-btn" onclick="changeTheme('light')">light</button> <br>
+</div>
+</div>
+<div id="img-info">
+</div>
+  <div id="outerContainer">
     <div id="container">
-      <div id="item">
-
-      </div>
     </div>
   </div>
 
 </body>
+
 </html>
