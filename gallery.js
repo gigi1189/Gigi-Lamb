@@ -237,8 +237,7 @@ function changeTheme(theme){
   if (theme === "dark"){
     bg.style.background = "#261a23";
   } else if (theme === "kawaii"){
-    bg.style.background = "url('Pics/Kawaii-Theme.jpg')";
-    bg.style.backgroundSize = "Contain";
+    bg.style.background = "url('Pics/Kawaii-Theme.png')";
   } else if (theme === "windows"){
     bg.style.background = "url('Pics/Windows-Theme.jpg')";
     bg.style.backgroundSize = "105%";

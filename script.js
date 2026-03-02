@@ -1,4 +1,4 @@
-const clickSound = new Audio('Sounds/Submarine.mp3');
+const clickSound = new Audio('Sounds/click.mp3');
 const hoverSound = new Audio('Sounds/Hover.mp3');
 
 function playClick() {

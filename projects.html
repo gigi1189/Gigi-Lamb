@@ -13,26 +13,43 @@
 </head>
 
 <body class="pjct-body">
-    <img class="motherboard-two" src="Pics/motherboard2.png">
+    <img class="motherboard-two" src="Pics/motherboard2.png">  
 
-    <button class="pjct-btn" onclick="showPjct(1)" style="transform: translate(154px, 72px);"></button>
-    <button class="pjct-btn" onclick="showPjct(2)" style="transform: translate(152px, 175px);"></button>
-    <button class="pjct-btn" onclick="showPjct(3)" style="transform: translate(150px, 280px);"></button>
-    <button class="pjct-btn" onclick="showPjct(4)" style="transform: translate(150px, 384px);"></button>
-    <button class="pjct-btn" onclick="showPjct(5)" style="transform: translate(150px, 490px);"></button>
-    <button class="pjct-btn" onclick="showPjct(6)" style="transform: translate(148px, 593px);"></button>
-    <button class="pjct-btn" onclick="showPjct(7)" style="transform: translate(147px, 697px);"></button>
+   <div class="pjct-nav">
+    Nav: <br>
+    <a href="home.html">home</a> <br>
+    <a href="blog.html">blog</a> <br>
+    <a href="gallery.html">gallery</a> <br>
+   </div>
+
+    <p class="pjct-board" style="transform:translate(40px, 0px)">WebDev</p>
+    <p class="pjct-board" style="transform:translate(20px, 100px)">Hackintosh</p>
+    <p class="pjct-board" style="transform:translate(70px, 210px)">Java</p>
+    <p class="pjct-board" style="transform:translate(80px, 320px)">Art</p>
+    <p class="pjct-board" style="transform:translate(40px, 430px)">Friends!</p>
+    <p class="pjct-board" style="transform:translate(-5px, 540px)">IRC on Miyoo</p>
+    <p class="pjct-board" style="transform:translate(30px, 650px)">Homelab</p>
+
+
+
+    <button class="pjct-btn" onclick="showPjct(1), playClick()" style="transform: translate(157px, 0px);"></button>
+    <button class="pjct-btn" onclick="showPjct(2), playClick()" style="transform: translate(155px, 110px);"></button>
+    <button class="pjct-btn" onclick="showPjct(3), playClick()" style="transform: translate(153px, 220px);"></button>
+    <button class="pjct-btn" onclick="showPjct(4), playClick()" style="transform: translate(153px, 330px);"></button>
+    <button class="pjct-btn" onclick="showPjct(5), playClick()" style="transform: translate(152px, 440px);"></button>
+    <button class="pjct-btn" onclick="showPjct(6), playClick()" style="transform: translate(150px, 552px);"></button>
+    <button class="pjct-btn" onclick="showPjct(7), playClick()" style="transform: translate(148px, 665px);"></button>
 
 
     <img class="red-light light-one" src="Pics/red-light1.png"
-        style="transform: translate(262px, 77px); display:block;">
-    <img class="red-light light-two" src="Pics/red-light2.png" style="transform: translate(259px, 186px);">
-    <img class="red-light light-three" src="Pics/red-light3.png" style="transform: translate(258px, 296px);">
+        style="transform: translate(262px, 12px); display:block;">
+    <img class="red-light light-two" src="Pics/red-light2.png" style="transform: translate(259px, 120px);">
+    <img class="red-light light-three" src="Pics/red-light3.png" style="transform: translate(258px, 230px);">
     <img class="red-light light-four" src="Pics/red-light4.png"
-        style="transform: translate(260px, 407px); height:30px;">
-    <img class="red-light light-five" src="Pics/red-light5.png" style="transform: translate(255px, 513px);">
-    <img class="red-light light-six" src="Pics/red-light6.png" style="transform: translate(260px, 625px);">
-    <img class="red-light light-seven" src="Pics/red-light7.png" style="transform: translate(256px, 737px);">
+        style="transform: translate(260px, 340px); height:30px;">
+    <img class="red-light light-five" src="Pics/red-light5.png" style="transform: translate(256px, 450px);">
+    <img class="red-light light-six" src="Pics/red-light6.png" style="transform: translate(260px, 560px);">
+    <img class="red-light light-seven" src="Pics/red-light7.png" style="transform: translate(256px, 670px);">
 
 
 
@@ -233,12 +250,14 @@
                 </div>
                 <div class="pjct-four-content">
                     <div id="option-1" class="option" style="display:block;">
-                         <p>
-                            Adorable doll I made from felt, wire, cotton, and thread for my friend Zahra using a tutorial from <a
-                                href="https://www.tiktok.com/@ssaaffron_" target="_blank" rel="noopener noreferrer">
+                        <p>
+                            Adorable doll I made from felt, wire, cotton, and thread for my friend Zahra using a
+                            tutorial from <a href="https://www.tiktok.com/@ssaaffron_" target="_blank"
+                                rel="noopener noreferrer">
                                 @ssaaffron_</a> on TT!
                             <br>
-                            Not many pictures sadly.. But it is certainly true to life! More to come :) They are so much fun to make
+                            Not many pictures sadly.. But it is certainly true to life! More to come :) They are so much
+                            fun to make
                         </p>
                         <img src="Pics/Art/zahradoll1.jpg" style="height:400px">
                         <img src="Pics/Art/zahradoll2.jpg" style="height:400px">
@@ -246,11 +265,16 @@
 
                     <div id="option-2" class="option">
                         <p>Im a doodler at heart and I doubt I will ever change my ways. Also never drawing a man. </p>
-                        <img src="Pics/Art/Drawing1.jpg" class="doodle"><img src="Pics/Art/Drawing2.jpg" class="doodle"><img src="Pics/Art/Drawing3.jpg" class="doodle">
-                        <img src="Pics/Art/Drawing4.jpg" class="doodle"><img src="Pics/Art/Drawing5.jpg" class="doodle"><img src="Pics/Art/Drawing6.jpg" class="doodle">
-                        <img src="Pics/Art/Drawing7.jpg" class="doodle"><img src="Pics/Art/Drawing8.jpg" class="doodle"><img src="Pics/Art/Drawing9.jpg" class="doodle">
-                        <img src="Pics/Art/Drawing10.jpg" class="doodle"><img src="Pics/Art/Drawing11.jpg" class="doodle"><img src="Pics/Art/Drawing12.jpg" class="doodle">
-                        <img src="Pics/Art/Drawing13.jpg" class="doodle"><img src="Pics/Art/Drawing14.jpg" class="doodle"><img src="Pics/Art/Drawing15.jpg" class="doodle">
+                        <img src="Pics/Art/Drawing1.jpg" class="doodle"><img src="Pics/Art/Drawing2.jpg"
+                            class="doodle"><img src="Pics/Art/Drawing3.jpg" class="doodle">
+                        <img src="Pics/Art/Drawing4.jpg" class="doodle"><img src="Pics/Art/Drawing5.jpg"
+                            class="doodle"><img src="Pics/Art/Drawing6.jpg" class="doodle">
+                        <img src="Pics/Art/Drawing7.jpg" class="doodle"><img src="Pics/Art/Drawing8.jpg"
+                            class="doodle"><img src="Pics/Art/Drawing9.jpg" class="doodle">
+                        <img src="Pics/Art/Drawing10.jpg" class="doodle"><img src="Pics/Art/Drawing11.jpg"
+                            class="doodle"><img src="Pics/Art/Drawing12.jpg" class="doodle">
+                        <img src="Pics/Art/Drawing13.jpg" class="doodle"><img src="Pics/Art/Drawing14.jpg"
+                            class="doodle"><img src="Pics/Art/Drawing15.jpg" class="doodle">
                         <img src="Pics/Art/Drawing16.jpg" class="doodle">
                     </div>
 
@@ -276,7 +300,7 @@
                         <img src="Pics/Art/girlz.jpg" class="painting">
                         <img src="Pics/Art/laura.jpg" class="painting">
                         <img src="Pics/Art/bunnies.jpg" class="painting">
-                        
+
                     </div>
                 </div>
             </div>
@@ -284,13 +308,19 @@
 
         <div class="pjct pjct-five"> Project 5</div>
 
-        <div class="pjct pjct-six"> Project 666</div>
+        <div class="pjct pjct-six">
+            <div style="background-image:url('Pics/space.gif'); height: 555px; align-items: center;">
+                <img src="Pics/ConstructionPikachu.gif" style="margin:230px 230px;">
+            </div>
+        </div>
 
 
-        <div class="pjct pjct-seven"> Project 777</div>
+        <div class="pjct pjct-seven">
+            <div style="background-image:url('Pics/space.gif'); height: 555px; align-items: center;">
+                <img src="Pics/ConstructionPikachu.gif" style="margin:230px 230px;">
+            </div>
+        </div>
     </div>
-
-    <a href="home.html">home</a>
 </body>
 
 </html>

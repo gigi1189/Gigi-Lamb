@@ -133,6 +133,7 @@ button.second {
     position: absolute;
     height: 220px;
     transform: translate(760px, 1330px);
+    pointer-events: none;
 }
 
 .diamond {
@@ -141,6 +142,7 @@ button.second {
     -webkit-animation: breathing 4s ease-out infinite normal;
     animation: breathing 4s ease-out infinite normal;
     -webkit-font-smoothing: antialiased;
+    pointer-events: none;
 }
 
 @-webkit-keyframes breathing {
@@ -165,16 +167,19 @@ button.second {
     position: absolute;
     height: 110px;
     transform: translate(40px, 790px);
+    pointer-events: none;
 }
 
 .wires {
     position: absolute;
+    pointer-events: none;
 }
 
 .orchid {
     height: 450px;
     position: absolute;
     transform: translate(-50px, -400px);
+    pointer-events: none;
 }
 
 .main {
@@ -187,6 +192,7 @@ button.second {
 /* HOME PAGE CSS */
 .motherboard {
     position: absolute;
+    pointer-events: none;
     margin: auto;
     inset: 0;
     width: 100%;
@@ -399,14 +405,22 @@ button.second {
 /* PROJECTS PAGE CSS BELOW*/
 
 .pjct-body {
-    background-image: url("Pics/beach.jpg");
+    background-image: url("Pics/beach.gif");
+    overflow: hidden;
     background-color: rgb(255, 254, 233);
+}
+
+.pjct-nav {
+    font-family: 'Lexend Deca', monospace;
+    font-size: small;
+    transform: translate(400px, 120px);
 }
 
 .motherboard-two {
     position: absolute;
     height: 800px;
     margin: 20px 100px;
+    pointer-events: none;
 }
 
 .pjct-box {
@@ -414,7 +428,7 @@ button.second {
     color: black;
     width: 590px;
     height: 560px;
-    transform: translate(650px, 142px);
+    transform: translate(650px, 75px);
     background-color: #dbc5d1;
     position: position;
     border: 1px solid #b1838c;
@@ -440,7 +454,6 @@ button.second {
 
 .pjct-one {
     background-image: url("Pics/dot-background.gif");
-
     height: 540px;
     width: 555;
     transform: scale(1.04);
@@ -449,7 +462,7 @@ button.second {
 
 .pjct-gal {
     display: flex;
-    border: 1px solid rgba(159, 114, 130, 0.602);
+    border: 2px groove rgba(222, 144, 144, 0.69);
     height: 430px;
     justify-content: center;
     flex-wrap: wrap;
@@ -468,8 +481,8 @@ button.second {
 .pjct-btn {
     position: absolute;
     background-color: rgb(35, 35, 35);
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     border-radius: 40px;
     box-shadow:
         inset 0 -0.0625em 0.0625em 0.125em rgba(0, 0, 0, 0.596),
@@ -523,18 +536,27 @@ button.second {
     border-top: 1px solid transparent;
 }
 
+.pjct-board {
+    position: absolute;
+    font-family: 'Lexend Deca', monospace;
+    color: #564da9;
+    font-size: large;
+    text-decoration: underline;
+}
+
 #pjct-four-options {
     background-image: url("Pics/tree2a.png");
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     border: 1px solid black;
-    width:20%;
+    width: 20%;
     height: 555px;
     text-align: center;
 }
-.pjct-four-btn{
-    color:#463e94;
+
+.pjct-four-btn {
+    color: #463e94;
     font-weight: bold;
     background-color: #00000000;
     border: none;
@@ -542,37 +564,41 @@ button.second {
     cursor: pointer;
 }
 
-.pjct-four-content{
+.pjct-four-btn:hover {
+    text-decoration: underline solid;
+    background: radial-gradient(white, #00000000);
+    border-radius: 15px;
+}
+
+.pjct-four-content {
     overflow-y: scroll;
     background-color: white;
     border: 1px solid rgb(46, 30, 30);
     color: black;
     font-size: small;
     padding: 10px;
-    width:490px;
-    height:535px;
+    width: 490px;
+    height: 535px;
 
 }
 
-.doodle{
+.doodle {
     height: 250px;
 }
 
-.painting{
+.painting {
     height: 200px;
 }
 
-.option{
-    display:none;
+.option {
+    display: none;
 }
 
-.pjct-four-btn:hover{
-    text-decoration: underline solid;
-}
+
 .red-light {
     display: none;
     position: absolute;
-    height: 33px;
+    height: 32px;
     animation: glowPulse 2s infinite alternate;
 }
 
@@ -590,38 +616,38 @@ button.second {
 
 /* CSS For Gallery Page */
 
-#gallery-body{
-    overflow-y: hidden; 
+#gallery-body {
+    overflow-y: hidden;
     background-image: none;
-    background-color:#ffffff;
+    background-color: #ffffff;
 }
 
-#gallery-nav{
+#gallery-nav {
     display: flex;
-    position:fixed;
+    position: fixed;
     background-color: grey;
     padding: 4px;
     transform: translate(-8px, -8px);
     border-radius: 0px 0px 5px 0px;
 }
 
-.gal-nav-btn{
-    border:2px groove black;
+.gal-nav-btn {
+    border: 2px groove black;
     background-color: #c5c3c4;
     border-radius: 5px;
     font-family: "Kode Mono", monospace;
-    font-size:small;
+    font-size: small;
 }
 
-.gal-nav-btn:hover{
-    cursor:pointer;
+.gal-nav-btn:hover {
+    cursor: pointer;
     background-color: #e5e3e4;
 }
 
-#info-box{    
+#info-box {
     display: none;
-    position:fixed;
-    width:350px;
+    position: fixed;
+    width: 350px;
     transform: translate(50px, 50px);
     padding: 10px;
     border: 1px groove black;
@@ -631,10 +657,10 @@ button.second {
     font-size: small;
 }
 
-#theme-box{
-    display:none;
-    position:fixed;
-    width:55px;
+#theme-box {
+    display: none;
+    position: fixed;
+    width: 55px;
     transform: translate(150px, 0px);
     padding: 1px;
     border: 1px groove black;
@@ -642,21 +668,22 @@ button.second {
     background: radial-gradient(#fefff0de, #ffe6fee4);
 }
 
-.theme-btn{
+.theme-btn {
     background-color: rgba(74, 70, 70, 0.206);
-    width:55px;
-    border:none;
+    width: 55px;
+    border: none;
     font-family: "Kode Mono", monospace;
-    font-size:x-small;
+    font-size: x-small;
 
 }
-.theme-btn:hover{
+
+.theme-btn:hover {
     background-color: rgba(74, 70, 70, 0.441);
 }
 
 #container {
     width: 180%;
-    height:100vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
     overflow: hidden;
@@ -678,8 +705,8 @@ button.second {
 }
 
 #img-info {
-    display:none;
-    position:fixed;
+    display: none;
+    position: fixed;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     text-align: center;
@@ -691,10 +718,12 @@ button.second {
     border: 1px groove black;
     border-radius: 3px;
 }
-#gallery-nav{
-   position:fixed;
-   color:black; 
+
+#gallery-nav {
+    position: fixed;
+    color: black;
 }
+
 .not-found-body {
     background: linear-gradient(-45deg, #9b6e75, #935b53, #9c4949, #b8574b);
     background-size: 400% 400%;
@@ -716,4 +745,12 @@ button.second {
     100% {
         background-position: 0% 50%;
     }
+}
+
+/* CSS For Blog Page */
+
+.blog-body {
+    background-image: url("Pics/grid1.jpg");
+    background-size: contain;
+    background-repeat: repeat;
 }
