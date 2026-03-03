@@ -111,3 +111,15 @@ function showOption(num) {
   const option = document.getElementById(optionId);
  option.style.display = "block";
 }
+function showPost(num) {
+  const allPosts = document.querySelectorAll(".blog-post");
+  
+  allPosts.forEach(post => {
+    post.style.display = "none";
+  });
+
+  const blogPost = document.getElementById("post-" + num);
+  if (blogPost) {
+    blogPost.style.display = "block";
+  }
+}

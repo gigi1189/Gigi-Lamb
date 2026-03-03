@@ -203,6 +203,7 @@ button.second {
 
 .main-box {
     position: absolute;
+    font-family:Arial, Helvetica, sans-serif;
     width: 670px;
     transform: translate(223px, 420px);
     border-radius: 5px;
@@ -214,7 +215,6 @@ button.second {
 }
 
 .abt-me-box {
-    font-family: 'Pixel Space', monospace;
     overflow-y: scroll;
     scrollbar-color: rgb(112, 112, 112) rgb(83, 83, 83);
     scrollbar-width: thin;
@@ -228,7 +228,6 @@ button.second {
 .right-box {
     color: white;
     text-align: center;
-    font-family: "Ubuntu Mono", monospace;
     font-size: small;
     border: 3px groove rgb(92, 92, 92);
     height: 159px;
@@ -251,7 +250,6 @@ button.second {
     border-width: 5px;
     border-color: rgb(80, 80, 80);
     color: white;
-    font-family: "Ubuntu Mono", monospace;
     height: 206px;
     width: 270px;
     transform: translate(222px, 1000px);
@@ -264,7 +262,6 @@ button.second {
     border-width: 3px;
     border-color: rgb(80, 80, 80);
     color: white;
-    font-family: "Ubuntu Mono", monospace;
     height: 204px;
     width: 267px;
     transform: translate(629px, 787px);
@@ -277,7 +274,6 @@ button.second {
     border-width: 3px;
     border-color: rgb(80, 80, 80);
     color: white;
-    font-family: "Ubuntu Mono", monospace;
     height: 200px;
     width: 270px;
     transform: translate(391px, 869px);
@@ -369,7 +365,7 @@ button.second {
     background-image: none;
     overflow-y: hidden;
     overflow-x: hidden;
-    background-color: rgba(96, 106, 174);
+    background-color: #606aae;
 }
 
 .about-box {
@@ -640,7 +636,7 @@ button.second {
 }
 
 .gal-nav-btn:hover {
-    cursor: pointer;
+cursor:pointer;
     background-color: #e5e3e4;
 }
 
@@ -753,4 +749,39 @@ button.second {
     background-image: url("Pics/grid1.jpg");
     background-size: contain;
     background-repeat: repeat;
+    overflow-y: hidden;
+    font-family: "Geo", sans-serif;
+}
+
+.blog-nav{
+    margin:50px;
+}
+.blog-entries{
+    border:1px solid #606aae;;
+    background-color: white;
+    width:150px;
+    height:600px;
+    margin:10px 0px 0px 100px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.entry-text{
+    color: #606aae;
+}
+
+.blog-content{
+     border:1px solid #606aae;;
+    background-color: white;
+    width:1000px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: black;
+    height:550px;
+    margin:10px 0px 0px 80px;
+    padding: 40px;
+}
+
+.blog-post {
+  display: none;
 }
