@@ -123,3 +123,4 @@ function showPost(num) {
     blogPost.style.display = "block";
   }
 }
+

@@ -6,37 +6,6 @@ body {
     position: relative;
 }
 
-/*
-
-FADE IN FROM BLACK - COMING SOON ????
-Source - https://stackoverflow.com/a/70499691
-Posted by S Gautam, modified by community. See post 'Timeline' for change history
-Retrieved 2026-02-08, License - CC BY-SA 4.0
-
-
-.overlay-black{
-    position: absolute;
-    top: 0; left: 0;
-    height: 100vh;
-    width: 100vw;
-    z-index:1;
-    background-color:black;
-    animation-name:fadeIn;
-    animation-duration: 2s;
-    animation-timing-function:ease-in;
-    animation-fill-mode:forwards;
-}
-
-@keyframes fadeIn {
-    from{
-        opacity: 1;
-    }
-    to{
-        opacity: 0;
-    }
-}
-*/
-
 /* MUSIC PLAYER CSS*/
 .music-player {
     position: fixed;
@@ -83,45 +52,35 @@ Retrieved 2026-02-08, License - CC BY-SA 4.0
     width: 25px;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, .2);
     font-size: 12px;
-    box-shadow:
-        3px 3px 16px rgba(255, 255, 255, .83),
-        5px 10px 15px rgba(0, 0, 0, .05),
-        15px 20px 35px rgba(0, 0, 0, .1),
-        inset -2px -2px 2px rgba(0, 0, 0, .1),
-        inset -1px -1px 3px rgba(255, 255, 255, .6),
-        inset 2px 2px 8px rgba(255, 255, 255, .2),
-        inset 1px 1px 8px rgba(255, 255, 255, .2),
-        3px 3px 16px rgba(255, 255, 255, .8);
     background-color: #e9e9ef;
     margin: auto;
     position: absolute;
     border: 0;
     transition: 300ms ease-out;
     cursor: pointer;
+}
 
-    &:hover {
-        box-shadow:
-            4px 4px 6px rgba(0, 0, 0, .2),
-            5px 10px 35px rgba(0, 0, 0, .1),
-            8px 10px 25px rgba(0, 0, 0, .1),
-            inset -1px -1px 9px rgba(0, 0, 0, .2),
-            inset -1px -1px 3px rgba(255, 255, 255, .6),
-            inset 1px 1px 8px rgba(255, 255, 255, 1),
-            inset 4px 4px 24px rgba(0, 0, 0, .15),
-            -5px -5px 15px rgba(255, 255, 255, .9);
-        transform: scale(.98);
+.player-btn:hover {
+    box-shadow:
+        4px 4px 6px rgba(0,0,0,.2),
+        5px 10px 35px rgba(0,0,0,.1),
+        8px 10px 25px rgba(0,0,0,.1),
+        inset -1px -1px 9px rgba(0,0,0,.2),
+        inset -1px -1px 3px rgba(255,255,255,.6),
+        inset 1px 1px 8px rgba(255,255,255,1),
+        inset 4px 4px 24px rgba(0,0,0,.15),
+        -5px -5px 15px rgba(255,255,255,.9);
+    transform: scale(.98);
+}
 
-
-    }
-
-    &:active,
-    &:focus {
-        box-shadow: inset 2px 2px 16px rgba(255, 255, 255, .9), inset 8px 8px 9px rgba(0, 0, 0, .2), 5px 10px 5px rgba(0, 0, 0, .03), -5px -5px 25px rgba(255, 255, 255, .1), -2px -2px 9px rgba(100, 100, 100, .1), inset -2px -2px 9px rgba(255, 255, 255, 1);
-        outline: none;
-        background-color: #e5e5ef;
-        text-shadow: -2px -2px 3px rgba(0, 0, 0, .2), 2px 2px 3px rgba(255, 255, 255, 1);
-        transform: translateY(3px);
-    }
+.player-btn:active,
+.player-btn:focus {
+    box-shadow: inset 2px 2px 16px rgba(255,255,255,.9),
+                inset 8px 8px 9px rgba(0,0,0,.2),
+                5px 10px 5px rgba(0,0,0,.03),
+                -5px -5px 25px rgba(255,255,255,.1),
+                -2px -2px 9px rgba(100,100,100,.1),
+                inset -2px -2px 9px rgba(255,255,255,1);
 }
 
 button.second {
@@ -190,6 +149,7 @@ button.second {
 }
 
 /* HOME PAGE CSS */
+
 .motherboard {
     position: absolute;
     pointer-events: none;
@@ -203,7 +163,8 @@ button.second {
 
 .main-box {
     position: absolute;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Inconsolata;
+    font-size: large;
     width: 670px;
     transform: translate(223px, 420px);
     border-radius: 5px;
@@ -244,6 +205,8 @@ button.second {
 }
 
 .other-box-1 {
+    font-family: Inconsolata;
+    font-size: large;
     background-image: url("Pics/StaticBG.jpg");
     border-radius: 5px;
     border-style: groove;
@@ -256,6 +219,8 @@ button.second {
 }
 
 .other-box-2 {
+    font-family: Inconsolata;
+    font-size: large;
     background-image: url("Pics/StaticBG.jpg");
     border-radius: 5px;
     border-style: groove;
@@ -282,32 +247,20 @@ button.second {
 .homepg-button {
     position: absolute;
     background-color: grey;
-    font-family: "Ubuntu Mono", monospace;
+    font-family: "Share Tech Mono";
     font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgb(198, 49, 49);
+    font-weight: bold;
+    border: 2px outset rgb(0, 0, 0);
+    color: #c63131;
     cursor: pointer;
-    border: 2px solid 636363;
-    padding: 0.25em 0.5em;
-    text-shadow: 1px 1px 1px rgb(138, 33, 33);
-    box-shadow:
-        1px 1px 0px 0px #4b4b4b,
-        2px 2px 0px 0px #4b4b4b,
-        3px 3px 0px 0px #4b4b4b,
-        4px 4px 0px 0px #4b4b4b,
-        5px 5px 0px 0px #4b4b4b;
-    position: relative;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     animation: blinker 3s linear infinite;
 }
 
-.homepg-button:active {
-    box-shadow: 0px 0px 0px 0px;
-    top: 5px;
-    left: 5px;
+.homepg-button:active{
+    border: 2px inset black;
 }
 
 @media (min-width: 768px) {
@@ -319,7 +272,7 @@ button.second {
 @keyframes blinker {
     50% {
         color: transparent;
-        text-shadow: none;
+        text-shadow:none;
     }
 }
 
@@ -327,34 +280,32 @@ button.second {
     letter-spacing: 4px;
     width: 159px;
     height: 34px;
-    transform: translate(325px, -456px);
+    transform: translate(329px, -348px);
 }
 
 .button-two {
     letter-spacing: 4px;
-    width: 168px;
-    height: 33px;
-    transform: translate(368px, -455px);
+    width: 169px;
+    height: 34px;
+    transform: translate(536px, -347px);
 }
 
 .button-three {
-    font-size: large;
     writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: -4px;
     height: 125px;
     width: 39px;
-    transform: translate(607px, 160px);
+    transform: translate(947px, 160px);
 }
 
 .button-four {
-    font-size: large;
     writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: -4px;
     height: 117px;
     width: 43px;
-    transform: translate(565px, 380px);
+    transform: translate(950px, 390px);
 }
 
 /* ABOUT ME PAGE CSS BELOW*/
@@ -420,21 +371,25 @@ button.second {
 }
 
 .pjct-box {
-    padding: 10px;
     color: black;
-    width: 590px;
-    height: 560px;
-    transform: translate(650px, 75px);
-    background-color: #dbc5d1;
-    position: position;
-    border: 1px solid #b1838c;
+    width: 800px;
+    height: 720px;
+    transform: translate(500px, -5px);
+    border: 2px solid #b1838c;
 }
 
 .pjct {
     display: none;
     font-family: 'Lexend Deca', monospace;
     color: white;
-    transform: scale(1.05);
+}
+
+.pjct-one {
+    background-image: url("Pics/dot-background.gif");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 97%;
+    width: 100%;
 }
 
 .pjct-two {
@@ -442,24 +397,17 @@ button.second {
     background-attachment: fixed;
     background-size: 100%;
     overflow-y: scroll;
-    height: 540px;
-    width: 555;
-    transform: scale(1.04);
+    height: 97%;
+    width: 100%;
     padding: 10px;
 }
 
-.pjct-one {
-    background-image: url("Pics/dot-background.gif");
-    height: 540px;
-    width: 555;
-    transform: scale(1.04);
-    padding: 10px;
-}
+
 
 .pjct-gal {
     display: flex;
     border: 2px groove rgba(222, 144, 144, 0.69);
-    height: 430px;
+    height: 80%;
     justify-content: center;
     flex-wrap: wrap;
     overflow-y: scroll;
@@ -468,6 +416,7 @@ button.second {
     font-size: small;
     background-color: rgba(240, 210, 210, 0.555);
     padding: 10px;
+    margin:0px 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -578,6 +527,40 @@ button.second {
 
 }
 
+.pjct-five{
+    background-color: #ffffff;
+    color:rgb(197, 69, 80);
+    background-image: url("Pics/WomanInGarden.gif");
+    background-position: center;
+    background-size: 160%;
+    height: 558px;
+    width: 590px;
+    position:relative;
+    overflow-x:hidden;
+}
+
+.pjct-five-item{
+  width: 90%;
+  margin: 30px 20px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 20px 10px rgba(255, 255, 255, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: -10px 10px 2px rgba(171, 171, 171, 0.519);
+}
+
+.pjct-five-item:hover{
+    transform:scale(1.05);
+    box-shadow: -15px 15px 6px rgba(171, 171, 171, 0.571);
+}
 .doodle {
     height: 250px;
 }
@@ -636,7 +619,7 @@ button.second {
 }
 
 .gal-nav-btn:hover {
-cursor:pointer;
+    cursor: pointer;
     background-color: #e5e3e4;
 }
 
@@ -750,38 +733,42 @@ cursor:pointer;
     background-size: contain;
     background-repeat: repeat;
     overflow-y: hidden;
+    overflow-x: hidden;
     font-family: "Geo", sans-serif;
 }
 
-.blog-nav{
-    margin:50px;
+.blog-nav {
+    margin: 50px;
 }
-.blog-entries{
-    border:1px solid #606aae;;
+
+.blog-entries {
+    border: 1px solid #606aae;
+    ;
     background-color: white;
-    width:150px;
-    height:600px;
-    margin:10px 0px 0px 100px;
+    width: 150px;
+    height: 600px;
+    margin: 10px 0px 0px 100px;
     padding: 5px;
     cursor: pointer;
 }
 
-.entry-text{
+.entry-text {
     color: #606aae;
 }
 
-.blog-content{
-     border:1px solid #606aae;;
+.blog-content {
+    border: 1px solid #606aae;
+    ;
     background-color: white;
-    width:1000px;
+    width: 900px;
     overflow-y: scroll;
     scrollbar-width: thin;
     scrollbar-color: black;
-    height:550px;
-    margin:10px 0px 0px 80px;
+    height: 550px;
+    margin: 10px 0px 0px 80px;
     padding: 40px;
 }
 
 .blog-post {
-  display: none;
+    display: none;
 }
