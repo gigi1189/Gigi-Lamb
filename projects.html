@@ -6,51 +6,331 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+
     <title>Projects - Gigi Lamb</title>
     <link rel="icon" type="image/x-icon" href="Pics/Favi2.png">
 </head>
 
 <body class="pjct-body">
-    <img class="motherboard-two" src="Pics/motherboard2.png">
+    <img class="motherboard-two" src="Pics/motherboard2.png">  
 
-<button class="pjct-btn" onclick="showPjct(1)" style="transform: translate(154px, 72px);"></button>
-<button class="pjct-btn" onclick="showPjct(2)" style="transform: translate(152px, 175px);"></button>
-<button class="pjct-btn" onclick="showPjct(3)" style="transform: translate(150px, 280px);"></button>
-<button class="pjct-btn"  onclick="showPjct(4)"style="transform: translate(150px, 384px);"></button>
-<button class="pjct-btn" onclick="showPjct(5)" style="transform: translate(150px, 490px);"></button>
-<button class="pjct-btn" onclick="showPjct(6)" style="transform: translate(148px, 593px);"></button>
-<button class="pjct-btn" onclick="showPjct(7)" style="transform: translate(147px, 697px);"></button>
+   <div class="pjct-nav">
+    Nav: <br>
+    <a href="home.html">home</a> <br>
+    <a href="blog.html">blog</a> <br>
+    <a href="gallery.html">gallery</a> <br>
+   </div>
 
-
-<img class="red-light light-one" src="Pics/red-light.png" style="transform: translate(253px, 85px); display:block;">
-<img class="red-light light-two" src="Pics/red-light.png" style="transform: translate(253px, 185px);">
-<img class="red-light light-three" src="Pics/red-light2.png" style="transform: translate(251px, 290px); height:30px;">
-<img class="red-light light-four" src="Pics/red-light2.png" style="transform: translate(251px, 390px); height:30px;">
-<img class="red-light light-five" src="Pics/red-light3.png" style="transform: translate(250px, 490px); height:30px;">
-<img class="red-light light-six" src="Pics/red-light3.png" style="transform: translate(250px, 595px);">
-<img class="red-light light-seven" src="Pics/red-light3.png" style="transform: translate(246px, 698px);">
+    <p class="pjct-board" style="transform:translate(40px, 0px)">WebDev</p>
+    <p class="pjct-board" style="transform:translate(20px, 100px)">Hackintosh</p>
+    <p class="pjct-board" style="transform:translate(70px, 210px)">Java</p>
+    <p class="pjct-board" style="transform:translate(80px, 320px)">Art</p>
+    <p class="pjct-board" style="transform:translate(40px, 430px)">Friends!</p>
+    <p class="pjct-board" style="transform:translate(-5px, 540px)">IRC on Miyoo</p>
+    <p class="pjct-board" style="transform:translate(30px, 650px)">Homelab</p>
 
 
 
-</div>
-<div class="pjct-box">
-<div class="pjct-one pjct" style="display:block;" > Project 1 </div>
-
-<div class="pjct-two pjct "> Project tew</div>
-
-<div class="pjct-three pjct"> Project threee</div>
-
-<div class="pjct pjct-four"> Project four</div>
-
-<div class="pjct pjct-five"> Project 5</div>
-
-<div class="pjct pjct-six"> Project 666</div>
+    <button class="pjct-btn" onclick="showPjct(1), playClick()" style="transform: translate(157px, 0px);"></button>
+    <button class="pjct-btn" onclick="showPjct(2), playClick()" style="transform: translate(155px, 110px);"></button>
+    <button class="pjct-btn" onclick="showPjct(3), playClick()" style="transform: translate(153px, 220px);"></button>
+    <button class="pjct-btn" onclick="showPjct(4), playClick()" style="transform: translate(153px, 330px);"></button>
+    <button class="pjct-btn" onclick="showPjct(5), playClick()" style="transform: translate(152px, 440px);"></button>
+    <button class="pjct-btn" onclick="showPjct(6), playClick()" style="transform: translate(150px, 552px);"></button>
+    <button class="pjct-btn" onclick="showPjct(7), playClick()" style="transform: translate(148px, 665px);"></button>
 
 
-<div class="pjct pjct-seven"> Project 777</div>
-</div>
+    <img class="red-light light-one" src="Pics/red-light1.png"
+        style="transform: translate(262px, 12px); display:block;">
+    <img class="red-light light-two" src="Pics/red-light2.png" style="transform: translate(259px, 120px);">
+    <img class="red-light light-three" src="Pics/red-light3.png" style="transform: translate(258px, 230px);">
+    <img class="red-light light-four" src="Pics/red-light4.png"
+        style="transform: translate(260px, 340px); height:30px;">
+    <img class="red-light light-five" src="Pics/red-light5.png" style="transform: translate(256px, 450px);">
+    <img class="red-light light-six" src="Pics/red-light6.png" style="transform: translate(260px, 560px);">
+    <img class="red-light light-seven" src="Pics/red-light7.png" style="transform: translate(256px, 670px);">
 
-<a href="home.html">home</a>
+
+
+    </div>
+    <div class="pjct-box">
+        <div class="pjct-one pjct" style="display:block;">
+            <p style="color:#1b565d; padding: 10px;">
+                <span style="font-size:30px; color:#b42020;">Webdev projects</span>
+                <br>
+                My web-based projects/experiments/assignments. Most of these are from high school haha :P Sorted from
+                most to least recent.
+            </p>
+            <div class="pjct-gal">
+                <div class="pjct-item" style="width: 200px;" onmouseenter="playHoverSound()">
+                    <img src="Pics/Educator-Pjct.png" style="height:200px; border-radius: 5px;">
+                    <p style="color:rgb(180, 32, 32);">
+                        The Educator Project<span style="color:grey; font-size: x-small;"> - Nov 2024</span>
+                    </p>
+                    <p>
+                        Read an interview and analysis of a teacher about the experience of
+                        queer youth in rural America from her perspective.
+                    </p>
+                    <a href="https://gigi1189.github.io/The-Educator-Project/" target="_blank" rel="noopener noreferrer"
+                        style="font-size: x-small; color:grey;"> Website |</a>
+                    <a href="https://github.com/gigi1189/The-Educator-Project" target="_blank" rel="noopener noreferrer"
+                        style="font-size: x-small; color:grey;"> Repo </a>
+                </div>
+
+                <div class="pjct-item" style="width: 200px;" onmouseenter="playHoverSound()">
+                    <img src="Pics/CN-Portfolio.png" style="height:200px; border-radius: 5px;">
+                    <p style="color:rgb(180, 32, 32);">
+                        CN Portfolio<span style="color:grey; font-size: x-small;"> - May 2023</span>
+                    </p>
+                    <p>
+                        Explore a humble, retro-style portfolio from my high school days. Still cute! :)
+                    </p>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer"
+                        style="font-size: x-small; color:grey;"> Website |</a>
+                    <a href="https://github.com/gigi1189/CN-Portfolio" target="_blank" rel="noopener noreferrer"
+                        style="font-size: x-small; color:grey;"> Repo </a>
+                </div>
+
+                <div class="pjct-item" style="width: 200px;" onmouseenter="playHoverSound()">
+                    <img src="Pics/Playlist.png" style="height:200px; border-radius: 5px;">
+                    <p style="color:rgb(180, 32, 32);">
+                        Playlist<span style="color:grey; font-size: x-small;"> - Nov 2022</span>
+                    </p>
+                    <p>
+                        Listen to and add more to a rad metal playlist!!
+                    </p>
+                    <a href="https://gigi1189.github.io/02.P-Unit-Project-Playlist/" target="_blank"
+                        rel="noopener noreferrer" style="font-size: x-small; color:grey;"> Website |</a>
+                    <a href="https://github.com/gigi1189/02.P-Unit-Project-Playlist" target="_blank"
+                        rel="noopener noreferrer" style="font-size: x-small; color:grey;"> Repo </a>
+                </div>
+
+                <div class="pjct-item" style="width: 200px;" onmouseenter="playHoverSound()">
+                    <img src="Pics/Buzzfeed.png" style="height:200px; border-radius: 5px;">
+                    <p style="color:rgb(180, 32, 32);">
+                        Buzzfeed Quiz - What Enesco Home Grown Animal are you?<span
+                            style="color:grey; font-size: x-small;"> - Nov 2022</span>
+                    </p>
+                    <p>
+                        Take a Buzzfeed-style quiz and find out what obscure food animal figurine you embody.
+                    </p>
+                    <a href="https://gigi1189.github.io/FLW-01.P-BuzzFeed-Character-Quiz-/" target="_blank"
+                        rel="noopener noreferrer" style="font-size: x-small; color:grey;"> Website |</a>
+                    <a href="https://github.com/gigi1189/FLW-01.P-BuzzFeed-Character-Quiz-" target="_blank"
+                        rel="noopener noreferrer" style="font-size: x-small; color:grey;"> Repo </a>
+                </div>
+
+                <div class="pjct-item" style="width: 200px;" onmouseenter="playHoverSound()">
+                    <img src="Pics/Jiji-Sweets.png" style="height:200px; border-radius: 5px;">
+                    <p style="color:rgb(180, 32, 32);">
+                        Jiji's Custom Sweets<span style="color:grey; font-size: x-small;"> - Mar 2023</span>
+                    </p>
+                    <p>
+                        Explore the promotional website of my fictional bakery that makes custom desserts!
+                    </p>
+                    <a href="https://gigi1189.github.io/Jijis-Bakery--Custom-Sweets/" target="_blank"
+                        rel="noopener noreferrer" style="font-size: x-small; color:grey;"> Website |</a>
+                    <a href="https://github.com/gigi1189/Jijis-Bakery--Custom-Sweets" target="_blank"
+                        rel="noopener noreferrer" style="font-size: x-small; color:grey;"> Repo </a>
+                </div>
+
+                <div class="pjct-item" style="width: 200px;" onmouseenter="playHoverSound()">
+                    <img src="Pics/The-Awakening.png" style="height:200px; border-radius: 5px;">
+                    <p style="color:rgb(180, 32, 32);">
+                        The Awakening Pt. 3 - The Darkness Returns<span style="color:grey; font-size: x-small;"> - Nov
+                            2022</span>
+                    </p>
+                    <p>
+                        Play a quick choose your own adventure zombie game. Escape the apocolypse!!
+                    </p>
+                    <a href="https://gigi1189.github.io/6P--The-Awkening-Pt-3--The-Darkness-Returns/" target="_blank"
+                        rel="noopener noreferrer" style="font-size: x-small; color:grey;"> Website |</a>
+                    <a href="https://github.com/gigi1189/6P--The-Awkening-Pt-3--The-Darkness-Returns" target="_blank"
+                        rel="noopener noreferrer" style="font-size: x-small; color:grey;"> Repo </a>
+                </div>
+
+                <div class="pjct-item" style="width: 200px;" onmouseenter="playHoverSound()">
+                    <img src="Pics/Mikuspace.png" style="height:200px; border-radius: 5px;">
+                    <p style="color:rgb(180, 32, 32);">
+                        Mikuspace <span style="color:grey; font-size: x-small;"> - Sep 2022</span>
+                    </p>
+                    <p>
+                        A recreation of the virtual idol's hypothetical Myspace page, circa 2007ish.
+                    </p>
+                    <a href="https://gigi1189.github.io/MYSPACE/" target="_blank" rel="noopener noreferrer"
+                        style="font-size: x-small; color:grey;"> Website |</a>
+                    <a href="https://github.com/gigi1189/MYSPACE" target="_blank" rel="noopener noreferrer"
+                        style="font-size: x-small; color:grey;"> Repo </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pjct-two pjct">
+            <p style="background-color: rgba(232, 186, 186, 0.869);
+                padding:10px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                 backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);
+                border-radius: 10px;
+                margin-bottom: 70px;">
+                The iMac G4 was released January of 2002 with a stunning design. <img src="Pics/G4.png"
+                    style="float:right; height:200px; transform: rotate(10deg);">
+                I've heard it called, 'the lamp
+                computer', 'the sunflower', 'the dome', etc.. In any case, its retro-furtist design attracted me
+                immediately. As a dedicated internet/tech
+                nostaglist, it's only natural that I'd own one of these hahah
+            </p>
+            <br>
+            <div style="background-color: rgba(232, 186, 186, 0.869);
+                padding:10px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                 backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);
+                border-radius: 10px;">
+                <img src="Pics/DockLite.jpg"
+                    style="height:140px; padding: 5px; float:left; transform:rotate(-5deg); border:1px dotted #70434b73; ">
+                I had very little experience working with computer hardware. Much less Apple
+                "logic boards" from over two decades ago. This project was
+                almost DOA three years ago unless I felt like learning about such things (which I didn't). That's when I
+                found
+                Juicy Crumb - a small group of engineers
+                dedicated to giving a second life to old, gorgeous
+                computers such as this one.
+            </div>
+            <br>
+
+            <div style="background-color: rgba(232, 186, 186, 0.869);
+                padding:10px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                 backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);
+                border-radius: 10px; margin-bottom: 60px;">
+                <div style="overflow-x: scroll; display:flex; scrollbar-color: #00000000; scrollbar-width: thin; 
+                width: 200px; float:right; transform: rotate(5deg);  
+                border:2px dashed #a4304573; padding: 5px; border-radius: 10px;">
+                    <img src="Pics/CD-Drive.png" style="height:200px; margin:0px 25px;">
+                    <img src="Pics/MoreG4.png" style="height:200px; margin:0px 25px;">
+                    <img src="Pics/WomenInStem.png" style="height:200px; margin:0px 25px;">
+                    <img src="Pics/M2.png" style="height:200px; margin:0px 25px;">
+                </div>
+                The process of replacing the logic boards was very easy, even for how clumsy
+                I am. I have the 17 inch model specifically.
+                Now, since the Juicy Crumb dock turns the Mac into a monitor, its optical drive does not work :C And I
+                have lots of accessories plugged into the back of it haha.
+            </div>
+            <br>
+            <div style="background-color: rgba(232, 186, 186, 0.869);
+                padding:10px; box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                 backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);
+                border-radius: 10px;">Right now it has an M2 hooked up to it but I can realistically use any
+                other apple device with it! I use it for casual browsing and
+                making my silly little programs, but it can handle quite a lot! I'm so impressed by this tiny thing.
+                Looking into how to run some AAA games on my iMac G4... I crave Oblivion. Was an expensive but totally
+                worth it project.
+                In the future I hope to do this with a G3, or possibly replace the insides completely and find a way to
+                get a functional CD drive!
+            </div>
+            <img src="Pics/GigiWG4.png" style="height:200px; margin: 50px 0px 0px 160px; border-radius:5px;">
+            <span
+                style="font-size: x-small; color:rgb(0, 0, 0); background-color:rgba(32, 178, 171, 0.563); margin-left: 180px;">me
+                on my puter :3</span>
+        </div>
+
+        <div class="pjct-three pjct">
+        </div>
+
+        <div class="pjct pjct-four">
+            <div style="display:flex;">
+                <div id="pjct-four-options">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="Pics/fan.gif" style="height:35px;">
+                    <button class="pjct-four-btn" onclick="showOption(1)">felt doll</button><br>
+                    <button class="pjct-four-btn" onclick="showOption(2)">doodles</button>
+                    <button class="pjct-four-btn" onclick="showOption(3)">beer phone cases</button><br>
+                    <button class="pjct-four-btn" onclick="showOption(4)">paint</button><br>
+                    <img src="Pics/dragonfly.gif" style="height:35px;">
+                </div>
+                <div class="pjct-four-content">
+                    <div id="option-1" class="option" style="display:block;">
+                        <p>
+                            Adorable doll I made from felt, wire, cotton, and thread for my friend Zahra using a
+                            tutorial from <a href="https://www.tiktok.com/@ssaaffron_" target="_blank"
+                                rel="noopener noreferrer">
+                                @ssaaffron_</a> on TT!
+                            <br>
+                            Not many pictures sadly.. But it is certainly true to life! More to come :) They are so much
+                            fun to make
+                        </p>
+                        <img src="Pics/Art/zahradoll1.jpg" style="height:400px">
+                        <img src="Pics/Art/zahradoll2.jpg" style="height:400px">
+                    </div>
+
+                    <div id="option-2" class="option">
+                        <p>Im a doodler at heart and I doubt I will ever change my ways. Also never drawing a man. </p>
+                        <img src="Pics/Art/Drawing1.jpg" class="doodle"><img src="Pics/Art/Drawing2.jpg"
+                            class="doodle"><img src="Pics/Art/Drawing3.jpg" class="doodle">
+                        <img src="Pics/Art/Drawing4.jpg" class="doodle"><img src="Pics/Art/Drawing5.jpg"
+                            class="doodle"><img src="Pics/Art/Drawing6.jpg" class="doodle">
+                        <img src="Pics/Art/Drawing7.jpg" class="doodle"><img src="Pics/Art/Drawing8.jpg"
+                            class="doodle"><img src="Pics/Art/Drawing9.jpg" class="doodle">
+                        <img src="Pics/Art/Drawing10.jpg" class="doodle"><img src="Pics/Art/Drawing11.jpg"
+                            class="doodle"><img src="Pics/Art/Drawing12.jpg" class="doodle">
+                        <img src="Pics/Art/Drawing13.jpg" class="doodle"><img src="Pics/Art/Drawing14.jpg"
+                            class="doodle"><img src="Pics/Art/Drawing15.jpg" class="doodle">
+                        <img src="Pics/Art/Drawing16.jpg" class="doodle">
+                    </div>
+
+                    <div id="option-3" class="option">
+                        <p>Big beer fan here! I've made several different versions of this but still looking for the
+                            best way to attach
+                            the bottles to the case. They always fall off.. They're quite popular at bars! Maybe I
+                            should sell them? <a href="mailto: gigi.a.cordero@gmail.com"> let me know!</a>
+                        </p>
+                        <img src="Pics/Art/beercase1.png" style="height:350px; float: left; margin: 5px;">
+                        <img src="Pics/Art/beercase2.png"
+                            style="height:350px; border-radius: 10px; float:left; margin: 5px;">
+                        <img src="Pics/Art/beercase3.png" style="height:350px; float:left; margin: 5px;">
+                        <img src="Pics/Art/crouch gigi.png" . style="height:500px;">
+                    </div>
+                    <div id="option-4" class="option">
+                        <img src="Pics/Art/weirdoplaylist.jpg" class="painting">
+                        <img src="Pics/Art/businessmeeting.jpg" class="painting">
+                        <img src="Pics/Art/devilman.jpg" class="painting">
+                        <img src="Pics/Art/tiger.jpg" class="painting">
+                        <img src="Pics/Art/ummm.jpg" class="painting">
+                        <img src="Pics/Art/maud.jpg" class="painting">
+                        <img src="Pics/Art/girlz.jpg" class="painting">
+                        <img src="Pics/Art/laura.jpg" class="painting">
+                        <img src="Pics/Art/bunnies.jpg" class="painting">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pjct pjct-five"> 
+            <p>Here are cool things my awesome friends are making:</p>
+            <div class="pjct-five-item" onmouseenter="playHoverSound()">
+                Self Portrait<br><br>Joel
+            </div>
+            <div class="pjct-five-item" onmouseenter="playHoverSound()">
+                Two Pretty Best Friends <br><br> Sally 
+            </div>
+            <div class="pjct-five-item" onmouseenter="playHoverSound()">
+                <img src="Pics/Aegis.png" style="height:150px; float:left;">Aegis <br><br> Zahra 
+            </div>
+        </div>
+
+        <div class="pjct pjct-six">
+            <div style="background-image:url('Pics/space.gif'); height: 555px; align-items: center;">
+                <img src="Pics/ConstructionPikachu.gif" style="margin:230px 230px;">
+            </div>
+        </div>
+
+
+        <div class="pjct pjct-seven">
+            <div style="background-image:url('Pics/space.gif'); height: 555px; align-items: center;">
+                <img src="Pics/ConstructionPikachu.gif" style="margin:230px 230px;">
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
