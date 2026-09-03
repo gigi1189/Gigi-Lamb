@@ -9,10 +9,10 @@ body {
 /* MUSIC PLAYER CSS*/
 .music-player {
     position: fixed;
-    bottom: 5px;
-    right: 5px;
-    width: 275px;
-    height: 100px;
+    bottom: 10px;
+    width: 300px;
+    right: 10px;
+    height: 115px;
     background: rgba(54, 51, 51, 0.42);
     backdrop-filter: blur(3px);
     border-radius: 12px;
@@ -34,11 +34,10 @@ body {
 .player-button {
     cursor: pointer;
     font-family: 'Ubuntu Mono', monospace;
-    font-size: x-small;
+    font-size: small;
     color: white;
     background-color: #4b4b4b;
 }
-
 .player-text {
     font-family: 'Ubuntu Mono', monospace;
     font-size: x-small;
@@ -62,25 +61,25 @@ body {
 
 .player-btn:hover {
     box-shadow:
-        4px 4px 6px rgba(0,0,0,.2),
-        5px 10px 35px rgba(0,0,0,.1),
-        8px 10px 25px rgba(0,0,0,.1),
-        inset -1px -1px 9px rgba(0,0,0,.2),
-        inset -1px -1px 3px rgba(255,255,255,.6),
-        inset 1px 1px 8px rgba(255,255,255,1),
-        inset 4px 4px 24px rgba(0,0,0,.15),
-        -5px -5px 15px rgba(255,255,255,.9);
+        4px 4px 6px rgba(0, 0, 0, .2),
+        5px 10px 35px rgba(0, 0, 0, .1),
+        8px 10px 25px rgba(0, 0, 0, .1),
+        inset -1px -1px 9px rgba(0, 0, 0, .2),
+        inset -1px -1px 3px rgba(255, 255, 255, .6),
+        inset 1px 1px 8px rgba(255, 255, 255, 1),
+        inset 4px 4px 24px rgba(0, 0, 0, .15),
+        -5px -5px 15px rgba(255, 255, 255, .9);
     transform: scale(.98);
 }
 
 .player-btn:active,
 .player-btn:focus {
-    box-shadow: inset 2px 2px 16px rgba(255,255,255,.9),
-                inset 8px 8px 9px rgba(0,0,0,.2),
-                5px 10px 5px rgba(0,0,0,.03),
-                -5px -5px 25px rgba(255,255,255,.1),
-                -2px -2px 9px rgba(100,100,100,.1),
-                inset -2px -2px 9px rgba(255,255,255,1);
+    box-shadow: inset 2px 2px 16px rgba(255, 255, 255, .9),
+        inset 8px 8px 9px rgba(0, 0, 0, .2),
+        5px 10px 5px rgba(0, 0, 0, .03),
+        -5px -5px 25px rgba(255, 255, 255, .1),
+        -2px -2px 9px rgba(100, 100, 100, .1),
+        inset -2px -2px 9px rgba(255, 255, 255, 1);
 }
 
 button.second {
@@ -106,19 +105,19 @@ button.second {
 
 @-webkit-keyframes breathing {
     0% {
-        transform: translate(834px, 525px) scale(0.9);
+        transform: translate(834px, 500px) scale(0.9);
     }
 
     25% {
-        transform: translate(834px, 525px) scale(1);
+        transform: translate(834px, 500px) scale(1);
     }
 
     60% {
-        transform: translate(834px, 525px) scale(0.9);
+        transform: translate(834px, 500px) scale(0.9);
     }
 
     100% {
-        transform: translate(834px, 525px) scale(0.9);
+        transform: translate(834px, 500px) scale(0.9);
     }
 }
 
@@ -165,7 +164,8 @@ button.second {
     position: absolute;
     font-family: Inconsolata;
     font-size: large;
-    width: 670px;
+    width: 61%;
+    height: 27%;
     transform: translate(223px, 420px);
     border-radius: 5px;
     border-style: groove;
@@ -175,12 +175,12 @@ button.second {
     display: flex;
 }
 
-.gigi-pic{
-    width: 70%;
+.gigi-pic {
+    width: 80%;
     border: #e09da8 groove 3px;
     border-radius: 10px;
     padding: 3px;
-    margin:10px;  
+    margin: 5px;
     box-shadow: 5px 5px 10px #a77c8379;
 }
 
@@ -197,57 +197,90 @@ button.second {
 
 .right-box {
     color: white;
+    width: 45%;
+    border: 5px groove rgb(54, 54, 54);
     text-align: center;
     font-size: small;
-    overflow-y:scroll;
+    overflow-y: hidden;
 }
 
-#statuscafe { 
+#status-box:hover {
+    width: 100%;
+}
+
+#statuscafe {
     text-align: left;
     border-radius: 5px;
     border: 2px groove rgb(102, 102, 102);
     margin: 5px;
     padding: 10px;
-    color:white;
+    color: white;
     padding: .5em;
     background-color: rgb(129, 129, 129);
 }
 
-#statuscafe-username {
-    margin-bottom: .5em;
+#statuscafe:hover {
+    scale: 105%;
+    color: rgba(255, 255, 255, 0.616);
 }
-#statuscafe-content {
 
-    width:100%;
-    margin: 0 1em 0.5em 1em;
+#statuscafe-username {
+    font-size: smaller;
 }
 
 .other-box-1 {
     font-family: Inconsolata;
-    font-size: large;
+    font-size:small;
+    color:white;
     background-image: url("Pics/StaticBG.jpg");
     border-radius: 5px;
     border-style: groove;
     border-width: 5px;
     border-color: rgb(80, 80, 80);
-    color: white;
-    height: 206px;
-    width: 270px;
+    padding: 5px;
+    height: 10.2%;
+    width: 23.5%;
     transform: translate(222px, 1000px);
+}
+.piclogred-image {
+  margin-top:5px;
+  width: 57%;
+}
+.piclogred-image:hover {
+    scale: 105%;
+}
+
+.piclogred-caption{
+    font-size:small;
+    width:42%;
+    margin-top:-150px;
+    margin-left:155px;
+}
+.piclogred-timeago{
+    font-size:x-small;
+    width:50%;    
+    margin-top:10px;
+    margin-left:155px;
 }
 
 .other-box-2 {
     font-family: Inconsolata;
-    font-size: large;
+    font-size: small;
     background-image: url("Pics/StaticBG.jpg");
     border-radius: 5px;
     border-style: groove;
     border-width: 3px;
     border-color: rgb(80, 80, 80);
-    color: white;
-    height: 204px;
-    width: 267px;
+    display: flex;
+    height: 11.4%;
+    width: 24.3%;
     transform: translate(629px, 787px);
+}
+
+#terminal-scroll{
+    background-image: url('Pics/fish.gif');
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 .other-box-3 {
@@ -257,9 +290,9 @@ button.second {
     border-width: 3px;
     border-color: rgb(80, 80, 80);
     color: white;
-    height: 200px;
-    width: 270px;
-    transform: translate(391px, 869px);
+    height: 12.5%;
+    width: 24.5%;
+    transform: translate(391px, 855px);
 }
 
 .homepg-button {
@@ -277,7 +310,7 @@ button.second {
     animation: blinker 3s linear infinite;
 }
 
-.homepg-button:active{
+.homepg-button:active {
     border: 2px inset black;
 }
 
@@ -290,40 +323,40 @@ button.second {
 @keyframes blinker {
     50% {
         color: transparent;
-        text-shadow:none;
+        text-shadow: none;
     }
 }
 
 .button-one {
     letter-spacing: 4px;
-    width: 159px;
-    height: 34px;
-    transform: translate(329px, -348px);
+    width: 14.5%;
+    height: 1.9%;
+    transform: translate(329px, -370px);
 }
 
 .button-two {
     letter-spacing: 4px;
-    width: 169px;
-    height: 34px;
-    transform: translate(536px, -347px);
+    width: 15.3%;
+    height: 1.9%;
+    transform: translate(536px, -370px);
 }
 
 .button-three {
     writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: -4px;
-    height: 125px;
-    width: 39px;
-    transform: translate(947px, 160px);
+    height: 7%;
+    width: 3.7%;
+    transform: translate(947px, 140px);
 }
 
 .button-four {
     writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: -4px;
-    height: 117px;
-    width: 43px;
-    transform: translate(950px, 390px);
+    height: 7%;
+    width: 3.7%;
+    transform: translate(950px, 360px);
 }
 
 /* ABOUT ME PAGE CSS BELOW*/
@@ -405,7 +438,7 @@ button.second {
 .pjct-one {
     background-image: url("Pics/dot-background.gif");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     height: 97%;
     width: 100%;
 }
@@ -434,7 +467,7 @@ button.second {
     font-size: small;
     background-color: rgba(240, 210, 210, 0.555);
     padding: 10px;
-    margin:0px 10px;
+    margin: 0px 10px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -545,40 +578,41 @@ button.second {
 
 }
 
-.pjct-five{
+.pjct-five {
     background-color: #ffffff;
-    color:rgb(197, 69, 80);
+    color: rgb(197, 69, 80);
     background-image: url("Pics/WomanInGarden.gif");
     background-position: center;
     background-size: 160%;
     height: 558px;
     width: 590px;
-    position:relative;
-    overflow-x:hidden;
+    position: relative;
+    overflow-x: hidden;
 }
 
-.pjct-five-item{
-  width: 90%;
-  margin: 30px 20px;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.1),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
-    inset 0 0 20px 10px rgba(255, 255, 255, 1);
-  position: relative;
-  overflow: hidden;
-  box-shadow: -10px 10px 2px rgba(171, 171, 171, 0.519);
+.pjct-five-item {
+    width: 90%;
+    margin: 30px 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 20px 10px rgba(255, 255, 255, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: -10px 10px 2px rgba(171, 171, 171, 0.519);
 }
 
-.pjct-five-item:hover{
-    transform:scale(1.05);
+.pjct-five-item:hover {
+    transform: scale(1.05);
     box-shadow: -15px 15px 6px rgba(171, 171, 171, 0.571);
 }
+
 .doodle {
     height: 250px;
 }

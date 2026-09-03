@@ -21,49 +21,87 @@
     <div class="main-box">
       <div class="abt-me-box">
         <p> <!-- <iframe src="player.html" class="music-player"></iframe>-->
-          Welcome to Gigi Lamb, I am Gigi! I am 20 year old computer science student from NYC. Crazy about webdev
-          and creating/exploring unique funky websites.
-          <img
-            style="float:right; height: 200px; border: 5px rgb(255, 196, 192) double; border-radius: 40px; margin:10px;"
+          Welcome to Gigi Lamb, this is an <span style="color:rgb(234, 95, 95); font-weight: bold;"> 18+ </span>
+          website. I am Gigi! I am a 20 year old computer science student from NYC. Crazy about webdev and
+          <img style="float:left; width: 60%; border: 5px rgb(255, 196, 192) double; border-radius: 40px; margin:10px;"
             src="Pics/mainLotus.gif">
-          
+          creating/exploring unique funky websites.
           This site is meant to be both a portfolio as well
-          as my alternative to traditional social media. It is meant to be an embodyment of me and my online vision.
+          as my alternative to traditional social media. It is an embodyment of me and my online vision. And
+          <strong>YOU</strong>, yes you, also need to do your part in
+          taking back the internet!!
           <br>
           <br>
-          It's a very image heavy site and has not yet been optimized so I hope you can bare with me..
-          <br>
+          It's a very image heavy site and has not yet been optimized so I hope you can bare with me.. Most content you
+          see here are placeholders for much more exciting things to come!
+          Check back regularly.
+          <br> <br>
           Also btw enable js pwease love uuu!
         </p>
       </div>
 
       <div class="right-box">
-  
-         <p>Gigi</p> 
-          <img src="Pics/ShmokinCROPPED.gif" class="gigi-pic">
-          <br>
-         20 - NYC - she/any
 
-      <div class="right-box">
-          STATUS:
+        <p><u>Gigi</u></p>
+        <img src="Pics/White Gigi.png" class="gigi-pic">
+        <br>
+        20 - NYC - she/any
+        <br>
+        <br>
+        STATUS:
+        <a href="https://status.cafe/users/gigilamb" style="text-decoration: none;" target="blank_">
           <br>
-          <div class="status-box">
-            <div id="statuscafe">
-              <div id="statuscafe-username"></div>
-              <div id="statuscafe-content"></div>
-            </div>
-            <script src="https://status.cafe/current-status.js?name=gigilamb" defer></script>
-          </div>
-        </div>
+          <script>
+            document.writeln('<div id="statuscafe"><div id="statuscafe-content"></div><div id="statuscafe-username"></div></div>');
+            fetch("https://status.cafe/users/gigilamb/status.json")
+              .then(r => r.json())
+              .then(r => {
+                if (!r.content.length) {
+                  document.getElementById("statuscafe-content").innerHTML = "No status yet."
+                  return
+                }
+                document.getElementById("statuscafe-content").innerHTML = r.content
+                document.getElementById("statuscafe-username").innerHTML = 'feeling: ' + r.face + ' ' + r.timeAgo;
 
-        
+              })
+          </script>
+        </a>
+        <img src="Pics/CityScape1.png" style="width:100%; height:30%;">
+
       </div>
     </div>
     <div class="other-box-1">
-      HEWWOOO
+      Latest Flick:
+      <br>
+      <script src="//piclog.red/widget.js" data-userid="79"></script>
+      
     </div>
     <div class="other-box-2">
-      meow
+      <fieldset style="padding:0px;border:0;margin:-5px 0px 0px -5px;">
+        <iframe src="https://calendar.sakura.ne.jp/blog_cal.html" scrolling="no"
+          style="background-color:#fbe;padding:0px;border:0;margin-top:2px;overflow:hidden;width:172px;height:213px;scale:95%;overflow:hidden;">Unsupported
+          browser!</iframe>
+      </fieldset>
+
+      <div id="terminal-scroll"
+        style="font-family: monospace; font-size: x-small; font-weight: bold; color: #ff93e9a1; display: flex; flex-direction: column; overflow: hidden;">
+      </div>
+      <script>
+        const terminal = document.getElementById('terminal-scroll');
+        setInterval(() => {
+          const time = new Date().getTime().toString().slice(-6);
+          const packet = Math.floor(Math.random() * 100000).toString(16).toUpperCase();
+
+          const newLine = document.createElement('div');
+          newLine.innerText = `> PKT_RCV: [${time}] DATA: 0x${packet}`;
+
+          terminal.prepend(newLine);
+          if (terminal.childElementCount > 6) {
+            terminal.lastChild.remove();
+          }
+        }, 80); // Super fast scrolling
+      </script>
+
     </div>
     <div class="other-box-3">
       <marquee style="position:fixed; direction:right;"><img src="Pics/GigiChat.gif"><img src="Pics/GigiChat.gif"><img
