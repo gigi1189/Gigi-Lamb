@@ -175,6 +175,15 @@ button.second {
     display: flex;
 }
 
+.gigi-pic{
+    width: 70%;
+    border: #e09da8 groove 3px;
+    border-radius: 10px;
+    padding: 3px;
+    margin:10px;  
+    box-shadow: 5px 5px 10px #a77c8379;
+}
+
 .abt-me-box {
     overflow-y: scroll;
     scrollbar-color: rgb(112, 112, 112) rgb(83, 83, 83);
@@ -190,18 +199,27 @@ button.second {
     color: white;
     text-align: center;
     font-size: small;
-    border: 3px groove rgb(92, 92, 92);
-    height: 159px;
-    width: 200px;
+    overflow-y:scroll;
 }
 
-.status-box {
+#statuscafe { 
     text-align: left;
-    background-color: rgb(129, 129, 129);
     border-radius: 5px;
     border: 2px groove rgb(102, 102, 102);
     margin: 5px;
     padding: 10px;
+    color:white;
+    padding: .5em;
+    background-color: rgb(129, 129, 129);
+}
+
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+#statuscafe-content {
+
+    width:100%;
+    margin: 0 1em 0.5em 1em;
 }
 
 .other-box-1 {
